@@ -1,3 +1,3 @@
-export default function SidebarDefault() {
+export default function DefaultSidebar() {
   return null;
 }

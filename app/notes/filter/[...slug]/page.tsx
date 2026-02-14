@@ -4,14 +4,14 @@ import NotesClient from '../../Notes.client';
 
 interface Props {
   params: {
-    tag?: string[];
+    slug?: string[];
   };
 }
 
 export default async function FilteredNotesPage({ params }: Props) {
-  const { tag } = params;
+  const { slug } = params;
 
-  const selectedTag = tag?.[0];
+  const selectedTag = slug?.[0];
   const queryClient = new QueryClient();
 
   await queryClient.prefetchQuery({
